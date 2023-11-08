@@ -14,6 +14,9 @@ This is intended to be a simple and user friendly website mainly for visitors wa
 - Dedicated section and page that displays NGO projects and Testimonials.
 - Quickly accesible Donate button that leads to login/registration of the donor.
 
+  ### For Donors
+- 
+
 ## Technical Stack
 This website uses 
 - HTML
@@ -22,16 +25,14 @@ This website uses
 - Firebase
 
 ## Installation
-This section includes detailed instructions for installing the tool, including any terminal commands that need to be executed and dependencies that need to be installed. Instructions should be understandable by non-technical users (e.g. someone who knows how to open a terminal and run commands, but isn't necessarily a programmer), for example:
 
-1. Make sure you have Python version 3.8 or greater installed
+1. Make sure you have VSCode installed, along with the live server extension.
 
-2. Download the tool's repository using the command:
+2. Download the repository using the command:
 
         git clone https://github.com/bellingcat/hackathon-submission-template.git
 
-3. Move to the tool's directory and install the tool
+3. Open the repository in VSCode
 
-        cd hackathon-submission-template
-        pip install .
+4. Navigate to the index.html file and run using live server.
 
