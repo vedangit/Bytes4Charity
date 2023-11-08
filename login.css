@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+
+body {
+  background-color: #fff; /* White background */
+  background-image: url("backgroundform.avif");
+  background-size: cover;
+}
+
+h1 {
+  margin-bottom: 8%;
+  text-align: center;
+  color: #ff0072; /* Pink color for headings */
+  letter-spacing: 0.1em;
+}
+
+p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ff0072; /* Pink color for border */
+  line-height: 0.1em;
+}
+
+p span {
+  background: #fff;
+  padding: 0 10px;
+  color: #ff0072; /* Pink color for text */
+}
+
+input {
+  margin-bottom: 3%;
+  padding: 3%;
+  width: 100%;
+}
+
+input:last-of-type {
+  margin-bottom: 0;
+
+}
+
+input:focus{
+  outline: none;
+  border: inset #ff0072;
+
+}
+
+input, button {
+  padding: 3%;
+  width: 100%;
+}
+
+.login-container {
+  background-color: rgb(255, 255, 255);
+  padding: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 40vw;
+  margin-left: 30vw;
+  height: 96vh;
+  margin-top: 14px;
+
+}
+
+#submit, #create-acct-btn {
+  background-color: #ff0072; /* Pink color for buttons */
+  color: #fff; /* White text color */
+  border: none;
+  margin-top: 5%;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#sign-up {
+  border: none;
+  color: #ff0072; /* Pink color for text */
+  display: block;
+  margin-top: 5%; /* Adjust as needed */
+  text-align: center;
+}
+
+#create-acct {
+  display: none;
+}
+
+#return-btn {
+  background: none;
+  color: #ff0072; /* Pink color for text */
+  text-decoration: underline;
+  border: none;
+  margin-top: 3%;
+}
+
+.login-heading {
+  text-align: center;
+  font-size: 24px; /* Adjust font size as needed */
+  color: #8000FF; /* Purple color for heading */
+  margin-bottom: 10px;
+}
+
+/* Add these styles for radio buttons */
+input[type="radio"] {
+  margin-right: 5px; /* Adjust the margin as needed */
+  vertical-align: middle; /* Align radio buttons vertically */
+}
+
+/* Style the labels for radio buttons */
+label[for="member-role"],
+label[for="donor-role"] {
+  color: #ff0072; /* Pink color for labels */
+  font-weight: bold;
+}
+
+/* Style radio buttons when selected */
+input[type="radio"]:checked + label {
+  color: #8000FF; /* Purple color for selected labels */
+}
+
+.radiorole{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.specificrole{
+  margin: 12px;
+  display: flex;
+  justify-content:flex-start;
+  align-items:first baseline;
+  text-align:left;
+
+}
+

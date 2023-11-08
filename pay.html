@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Payment Gateway</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="pay.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card-container">
+
+        <div class="front">
+            <div class="image">
+                <img src="chip.png" alt="">
+                <img src="visa.png" alt="">
+            </div>
+            <div class="card-number-box">################</div>
+            <div class="flexbox">
+                <div class="box">
+                    <span>card holder</span>
+                    <div class="card-holder-name">full name</div>
+                </div>
+                <div class="box">
+                    <span>expires</span>
+                    <div class="expiration">
+                        <span class="exp-month">mm</span>
+                        <span class="exp-year">yy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="back">
+            <div class="stripe"></div>
+            <div class="box">
+                <span>cvv</span>
+                <div class="cvv-box"></div>
+                <img src="image/visa.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <form action="#" id="payment-form">
+        <div class="inputBox">
+            <span>Amount</span>
+            <input type="text" maxlength="9" class="card-number-input" id="amount-to-be-paid" required>
+        </div>
+        <div class="inputBox">
+            <span>card number</span>
+            <input type="text" maxlength="16" class="card-number-input" id="card-number" required>
+        </div>
+        <div class="inputBox">
+            <span>card holder</span>
+            <input type="text" class="card-holder-input" id="card-holder" required>
+        </div>
+        <div class="flexbox">
+            <div class="inputBox">
+                <span>expiration mm</span>
+                <select name="exp-month" id="month-input" class="month-input" required>
+                    <option value="month" selected disabled>month</option>
+                    <option value="01">12</option>
+                    <option value="02">11</option>
+                    <option value="03">10</option>
+                    <option value="04">09</option>
+                    <option value="05">08</option>
+                    <option value="06">07</option>
+                    <option value="07">06</option>
+                    <option value="08">05</option>
+                    <option value="09">04</option>
+                    <option value="10">03</option>
+                    <option value="11">02</option>
+                    <option value="12">01</option>
+                    
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>expiration yy</span>
+                <select name="exp-year" id="year-input" class="year-input" required>
+                    <option value="year" selected disabled>year</option>
+                    <option value="32">32</option>
+                    <option value="31">31</option>
+                    <option value="30">30</option>
+                    <option value="29">29</option>
+                    <option value="28">28</option>
+                    <option value="27">27</option>
+                    <option value="26">26</option>
+                    <option value="25">25</option>
+                    <option value="24">24</option>
+                    <option value="23">23</option>
+                    
+                </select>
+            </div>
+            <div class="inputBox">
+                <span>cvv</span>
+                <input type="text" maxlength="4" class="cvv-input" id="cvv" required>
+            </div>
+        </div>
+        <input type="submit" value="submit" class="submit-btn">
+    </form>
+
+</div>
+
+<script>
+    const amountToBePaid = document.getElementById('amount-to-be-paid');
+const form = document.getElementById('payment-form');
+const cardNumber = document.getElementById('card-number');
+const cardHolder = document.getElementById('card-holder');
+const monthInput = document.getElementById('month-input');
+const yearInput = document.getElementById('year-input');
+const cvv = document.getElementById('cvv');
+
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    
+    // validation checks errors implemented here
+
+    if (!isValidAmount(amountToBePaid.value)) {
+    alert('Invalid amount. Please enter a valid numeric amount.');
+    return;
+    }
+    if (!isValidCardNumber(cardNumber.value)) {
+        alert('Invalid card number. Please enter a valid 16-digit card number.');
+        return;
+    }
+
+    if (!isValidCardHolder(cardHolder.value)) {
+        alert('Invalid card holder name. Please enter a valid name.');
+        return;
+    }
+
+    if (monthInput.value === 'month' || yearInput.value === 'year') {
+        alert('Please select a valid expiration month and year.');
+        return;
+    }
+
+    if (!isValidCVV(cvv.value)) {
+        alert('Invalid CVV. Please enter a valid 3-digit CVV.');
+        return;
+    }
+
+    // If all checks pass, we proceed with form submission
+    alert('Payment successful!'); 
+});
+
+// Validation functions
+function isValidAmount(amount) {
+    return /^\d+(\.\d{2})?$/.test(amount); 
+}
+function isValidCardNumber(cardNumber) {
+    return /^\d{16}$/.test(cardNumber);
+}
+
+function isValidCardHolder(cardHolder) {
+    return /^[A-Za-z\s]+$/.test(cardHolder);
+}
+
+function isValidCVV(cvv) {
+    return /^\d{3}$/.test(cvv);
+}
+</script>
+
+</body>
+</html>

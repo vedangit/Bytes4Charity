@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Contact Us</h2>
+				<input type="text" class="field" id="name" placeholder="Your Name">
+				<input type="email" class="field" id="email" placeholder="Your Email">
+				<input type="text" class="field" id="phone" placeholder="Phone">
+				<textarea type="text" id="message" placeholder="Message" class="field"></textarea>
+				<button class="btn">Send</button>
+			</div>
+		</div>
+	</div>
+    <script type="module" src="contact.js"></script>
+	<!-- ... (your HTML code) ... -->
+
+<script type="module" src="contact.js"></script>
+
+<script>
+  // Function to validate the form
+  function validateForm() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+
+    if (name === "" || email === "" || phone === "" || message === "") {
+      window.alert("Please fill out all fields.");
+      return false; // Prevent form submission
+    }
+
+    // Validate email format using a regular expression
+    const emailRegex = /^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+    if (!email.match(emailRegex)) {
+      window.alert("Please enter a valid email address.");
+      return false; // Prevent form submission
+    }
+
+    // Validate phone number format (customize this according to your needs)
+    const phoneRegex = /^\d{10}$/; // Example: 1234567890 (10 digits)
+    if (!phone.match(phoneRegex)) {
+      window.alert("Please enter a valid phone number.");
+      return false; // Prevent form submission
+    }
+
+    return true; // Allow form submission if all validations pass
+  }
+
+  // Add an event listener to the form's submit button
+  const submitButton = document.querySelector(".btn");
+  submitButton.addEventListener("click", function (e) {
+    // Prevent the default form submission behavior if validations fail
+    if (!validateForm()) {
+      e.preventDefault();
+    }
+  });
+</script>
+
+</body>
+</html>

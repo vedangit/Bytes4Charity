@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>Our Stories</title> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel = "stylesheet" href = "header.css">   
+    <link rel="stylesheet" href="stories.css"> 
+</head>
+<body>
+    <header>
+        <nav class = "navigation">
+            <div class="logo">
+                <img src="logo.jpg" alt="NGO Logo"></div>
+            <ul class="nav-links">
+                <li><a href="ngo.html">Home</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><div class="dropdown">
+                    <button class="dropbtn">Donor Login</button>
+                    <div class="dropdown-content">
+                      <a href="login.html" target="_blank">Login</a>
+                      <a href="stories.html">Our stories</a>
+                    </div>
+                  </div></li>
+                <li>
+                  <a href="contact.html" target="_blank"><button class="button type1">
+                        Contact Us
+                    </button></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class = "heading">
+        <h2>Projects</h2>
+    </div>
+    <div class="container">
+
+                <div>
+          <div class="content">
+            <h2>Empowerment through Education</h2>
+            <span>"Empowerment through Education" currently empowers women by providing educational opportunities, fostering self-confidence, and encouraging them to pursue ambitious dreams.</span>
+          </div>
+        </div>
+        <div>
+          <div class="content">
+            <h2>Women's Skill Development</h2>
+            <span>"Women's Skill Development" is equipping women with vital vocational skills, enabling them to access better job opportunities and secure financial independence.</span>
+          </div>
+        </div>
+        <div>
+          <div class="content">
+            <h2>Healthcare for Women.</h2>
+            <span>"Healthcare for Women" ensures that women have access to essential healthcare services, maternal health support, and medical facilities, improving their overall well-being.</span>
+          </div>
+        </div>
+        <div>
+          <div class="content">
+            <h2>Women Startups</h2>
+            <span>"Women's Entrepreneurship" actively supports aspiring women entrepreneurs with business training, financial assistance, and mentorship to help them successfully establish and run their businesses.</span>
+          </div>
+        </div>
+      </div>
+<br><br><hr><br>
+
+    <div class="carousel">
+
+        <div class = "testimonials">
+            <h2>Hear from them</h2>
+        </div>
+        <a class="carousel-item" href="#" onclick="return false;">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="woman1.jpg">
+                </div>
+                <p>"Education has given me the confidence to dream big and work towards a better future."</p>
+                <h4>Aisha Seth</h4>
+                <h5>Schoolgoing student</h5>
+            </div>
+        </a>
+        <a class="carousel-item" href="#" onclick="return false;">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="woman2.jpg">
+                </div>
+                <p>"I acquired tailoring skills through this project. Now, I run a small business and support my family."</p>
+                <h4>Fatima Sheikh</h4>
+                <h5>Skilled Artisan</h5>
+            </div>
+        </a>
+        <a class="carousel-item" href="#" onclick="return false;">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="woman3.png">
+                </div>
+                <p>"Access to healthcare services changed our lives. We're healthier and happier now."</p>
+                <h4>Jenna Harris</h4>
+                <h5>A mother<h5>
+            </div>
+        </a>
+        <a class="carousel-item" href="#" onclick="return false;">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="woman4.jpg">
+                </div>
+                <p>"I learned how to turn my skills into a business. I'm grateful for this opportunity."</p>
+                <h4>Monica Smith</h4>
+                <h5>Aspiring Entreprenuer</h5>
+            </div>
+        </a>
+        <a class="carousel-item" href="#" onclick="return false;">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="woman5.png">
+                </div>
+                <p>"I never thought I'd lead a project. Now, I'm helping other women find their voices."</p>
+                <h4>Yinka Fernandez</h4>
+                <h5>Our Project Lead</h5>
+            </div>
+        </a>
+      
+   </div>
+
+    
+    
+    
+    <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+			padding: 200
+	});
+	autoplay();
+	function autoplay() {
+		$('.carousel').carousel('next');
+		setTimeout(autoplay, 4500);
+	}
+  });
+</script>
+</body>
+</html>

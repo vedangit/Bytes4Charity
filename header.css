@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img{
+    padding-top: 15px;
+    height: 70px;
+    width: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(40, 40, 40);
+    position: relative;
+}
+
+.nav-links a:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(55, 55, 55);
+    bottom: -3px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropbtn {
+  background: transparent;
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.dropbtn:after {
+    font-family: poppins;
+padding-left:10px;
+border-width: 1px;
+border-color: rgb(209, 70, 93);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+background: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  border-width: 2px;
+  border-color: rgb(209, 70, 93);
+}
+.button {
+    position: relative;
+    padding: 1em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    width: 150px;
+}
+
+.button.type1 {
+    color: #333;
+}
+
+.button.type1::after,
+.button.type1::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+}
+
+.button.type1::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #333;
+    border-right-color: #333;
+}
+
+.button.type1::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #333;
+    border-left-color: #333;
+}
+
+.button.type1:hover::after,
+.button.type1:hover::before {
+    width: 100%;
+    height: 100%;
+}

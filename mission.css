@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font styles */
+body {
+    background-color: #ffffff;
+    font-family: "poppins";
+}
+
+
+
+
+
+/* Style the mission section */
+.mission {
+    background-color: #fff;
+    padding: 2rem 0;
+    min-height: 500px;
+}
+
+/* Create a container to center content */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-shadow: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style the mission text columns */
+.mission-text {
+    
+    color: #fff;
+    /* background-color: rgb(209, 70, 93); */
+    background-image: linear-gradient(144deg,#f37cae 10%, #ff4090, #97076c 99%);
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 200;
+
+
+}
+
+.mission-text h2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+
+}
+
+.mission-text p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 16px;
+    width: 270px;
+    font-weight: 200;
+}
+
+/* Style the impact section */
+.impact {
+    background-color: #f5f5f5;
+    padding: 2rem 0;
+}
+
+.impact h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* Create a container for impact statistics */
+.impact-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Style the individual impact statistics */
+.stat {
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.stat p {
+    font-size: 1.5rem;
+    color: #009688;
+    font-weight: bold;
+}
+
+/* Style the footer */
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .mission-text {
+        margin-bottom: 1rem;
+    }
+    
+    .impact-stats {
+        flex-direction: column;
+    }
+    
+    .stat {
+        margin-bottom: 1rem;
+    }
+}
+
