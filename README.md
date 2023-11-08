@@ -15,7 +15,10 @@ This is intended to be a simple and user friendly website mainly for visitors wa
 - Quickly accesible Donate button that leads to login/registration of the donor.
 
   ### For Donors
-- 
+- A specific donor login.
+- A personalized donor dashboard showing - Donor Stats, Highlight project most in need of donation, showcases other ongoing projects.
+- Easily accessible payment button on the donor dashboard.
+- User friendly paywall
 
 ## Technical Stack
 This website uses 
