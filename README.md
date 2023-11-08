@@ -9,7 +9,7 @@ Kaustubh Patil - [Github](https://github.com/its-discreeeet)
 ## Features
 This is intended to be a simple and user friendly website mainly for visitors wanting to acquaint with the NGO, as well as regular donors.
 
-###For visitors
+### For visitors
 - A section on the home page and subsequently a separate page explaining the mission and approach of the NGO.
 - Dedicated section and page that displays NGO projects and Testimonials.
 - Quickly accesible Donate button that leads to login/registration of the donor.
