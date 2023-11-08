@@ -1,4 +1,4 @@
-# EmpowerHer
+# 🎗EmpowerHer🎗
 An NGO focused on empowering unpriviledge women.
 Made for Bytes4Charity Hackathon, hosted by CSI MIT-WPU, Pune.
 
@@ -40,4 +40,4 @@ This website uses
 4. Navigate to the index.html file and run using live server.
 
 
-## Find the website Here - [EmpowerHer](https://vedangit.github.io/Bytes4Charity.github.io/)
+## 🎁 Find the website Here - [EmpowerHer](https://vedangit.github.io/Bytes4Charity.github.io/)
