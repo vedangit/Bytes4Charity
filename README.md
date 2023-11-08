@@ -30,7 +30,7 @@ This website uses
 
 2. Download the repository using the command:
 
-        git clone https://github.com/bellingcat/hackathon-submission-template.git
+        git clone https://github.com/vedangit/Bytes4Charity.github.io
 
 3. Open the repository in VSCode
 
