@@ -7,4 +7,6 @@ Stack used :-
 - Frontend -> HTML, CSS & JavaScript
 - Database -> Firebase
 
-NOTE: Remember to access the donor dashboard by creating an account and choosing the 'Donor' role 👍
+- **TO RUN THE WEBSITE, use "index.html"**
+- Remember to access the donor dashboard by creating an account and choosing the 'Donor' role 👍
+- Member role users are normal users wihtout any additional privileges
